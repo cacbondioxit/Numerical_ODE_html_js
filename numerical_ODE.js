@@ -21,7 +21,7 @@ class DifferentialEquation {
     // }
 
     printDataTable() {
-        let res = [['x', 'Numeric Solution', 'ExactSolution']];
+        let res = [['x', 'Numeric Solution', 'Exact Solution']];
         for(let i=0; i<this.t.length; i++) {
             res.push([this.t[i], this.approx[i], this.exactSolution(this.t[i])]);
         }
